@@ -1,0 +1,14 @@
+{
+    "name": "com.annulusgames.enhanced-on-screen-stick",
+    "version": "1.0.0",
+    "displayName": "Enhanced On-Screen Stick",
+    "description": "Provides an advanced virtual joystick compatible with Unity's Input System/uGUI.",
+    "unity": "2020.1",
+    "dependencies": {
+        "com.unity.inputsystem": "1.0.0"
+    },
+    "author": {
+        "name": "Annulus Games",
+        "url": "https://annulusgames.com/"
+    }
+}

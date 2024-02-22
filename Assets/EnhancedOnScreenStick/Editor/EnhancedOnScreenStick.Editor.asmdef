@@ -1,0 +1,18 @@
+{
+    "name": "EnhancedOnScreenStick.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:5ffc2b5d3dc3443c9bc5fcb7b94a9524"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
