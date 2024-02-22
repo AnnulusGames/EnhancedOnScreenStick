@@ -1,5 +1,7 @@
 # Enhanced On-Screen Stick
- Provides an advanced virtual joystick compatible with Unity's Input System/uGUI.
+ Provides an advanced virtual joystick compatible with Unity Input System/uGUI.
+
+<img src="https://github.com/AnnulusGames/EnhancedOnScreenStick/blob/main/docs/images/header.png" width="800">
 
 [![license](https://img.shields.io/badge/LICENSE-MIT-green.svg)](LICENSE)
 ![unity-version](https://img.shields.io/badge/unity-2020.1+-000.svg)
