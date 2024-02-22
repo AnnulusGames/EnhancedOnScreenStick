@@ -25,7 +25,7 @@ Enhanced On-Screen Stick is a library that provides a highly functional virtual 
 3. Enter the following URL:
 
 ```
-https://github.com/AnnulusGames/EnhancedOnScreenStick.git?path=src/EnhancedOnScreenStick/Assets/EnhancedOnScreenStick
+https://github.com/AnnulusGames/EnhancedOnScreenStick.git?path=Assets/EnhancedOnScreenStick
 ```
 
 Alternatively, open Packages/manifest.json and add the following to the dependencies block:
@@ -33,7 +33,7 @@ Alternatively, open Packages/manifest.json and add the following to the dependen
 ```json
 {
     "dependencies": {
-        "com.annulusgames.enhanced-on-screen-stick": "https://github.com/AnnulusGames/EnhancedOnScreenStick.git?path=src/EnhancedOnScreenStick/Assets/EnhancedOnScreenStick"
+        "com.annulusgames.enhanced-on-screen-stick": "https://github.com/AnnulusGames/EnhancedOnScreenStick.git?path=Assets/EnhancedOnScreenStick"
     }
 }
 ```

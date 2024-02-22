@@ -25,7 +25,7 @@ Enhanced On-Screen Stickは、UnityのInput Systemに対応した高機能な仮
 3. 以下のURLを入力する
 
 ```
-https://github.com/AnnulusGames/EnhancedOnScreenStick.git?path=src/EnhancedOnScreenStick/Assets/EnhancedOnScreenStick
+https://github.com/AnnulusGames/EnhancedOnScreenStick.git?path=Assets/EnhancedOnScreenStick
 ```
 
 またはPackages/manifest.jsonを開き、dependenciesブロックに以下を追記
@@ -33,7 +33,7 @@ https://github.com/AnnulusGames/EnhancedOnScreenStick.git?path=src/EnhancedOnScr
 ```json
 {
     "dependencies": {
-        "com.annulusgames.enhanced-on-screen-stick": "https://github.com/AnnulusGames/EnhancedOnScreenStick.git?path=src/EnhancedOnScreenStick/Assets/EnhancedOnScreenStick"
+        "com.annulusgames.enhanced-on-screen-stick": "https://github.com/AnnulusGames/EnhancedOnScreenStick.git?path=Assets/EnhancedOnScreenStick"
     }
 }
 ```
