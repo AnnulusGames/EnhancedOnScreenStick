@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem.Layouts;
@@ -13,6 +14,13 @@ namespace EnhancedOnScreenControls
         Dynamic = 2
     }
 
+    public enum AxisOptions
+    {
+        Both = 0,
+        Horizontal = 1,
+        Vertical = 2
+    }
+
     [AddComponentMenu("Input/Enhanced On-Screen Stick")]
     [RequireComponent(typeof(RectTransform))]
     public class EnhancedOnScreenStick : OnScreenControl, IPointerDownHandler, IPointerUpHandler, IDragHandler
@@ -23,6 +31,7 @@ namespace EnhancedOnScreenControls
         string internalControlPath;
 
         [SerializeField] StickType stickType;
+        [SerializeField] AxisOptions axisOptions = AxisOptions.Both;
         [SerializeField] float movementRange = 50f;
         [SerializeField, Range(0f, 1f)] float deadZone = 0f;
         [SerializeField] bool showOnlyWhenPressed;
@@ -91,7 +100,7 @@ namespace EnhancedOnScreenControls
             var camera = canvas.worldCamera;
             var position = RectTransformUtility.WorldToScreenPoint(camera, background.position);
 
-            var input = (eventData.position - position) / (movementRange * canvas.scaleFactor);
+            var input = (eventData.position - position) / (movementRange * canvas.scaleFactor) * EnabledAxis();
             var rawMagnitude = input.magnitude;
             var normalized = input.normalized;
 
@@ -118,6 +127,15 @@ namespace EnhancedOnScreenControls
                 return localPoint - (background.anchorMax * rectTransform.sizeDelta) + pivotOffset;
             }
             return Vector2.zero;
+        }
+
+        Vector2 EnabledAxis()
+        {
+            if (axisOptions == AxisOptions.Horizontal)
+                return Vector2.right;
+            else if (axisOptions == AxisOptions.Vertical)
+                return Vector2.up;
+            return Vector2.one;
         }
     }
 }
