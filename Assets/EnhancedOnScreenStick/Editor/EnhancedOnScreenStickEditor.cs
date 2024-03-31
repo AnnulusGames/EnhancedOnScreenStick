@@ -19,6 +19,7 @@ namespace EnhancedOnScreenControls.Editor
             AddSpace(root, 6f);
 
             AddPropertyField(root, "stickType");
+            AddPropertyField(root, "axisOptions");
             AddPropertyField(root, "movementRange");
             AddPropertyField(root, "deadZone");
             AddPropertyField(root, "showOnlyWhenPressed");
